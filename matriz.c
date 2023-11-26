@@ -1,3 +1,8 @@
+/*
+Este código é um código feito em C, 
+é uma matriz 4 por 4 onde o teclado digita 
+os números da matriz e imprime a matriz.
+*/
 #include <stdio.h>
 
 int main() {
@@ -21,9 +26,3 @@ int main() {
 
     return 0;
 }
-
-/*
-Este código é um código feito em C, 
-é uma matriz 4 por 4 onde o teclado digita 
-os números da matriz e imprime a matriz.
-*/

@@ -1,3 +1,8 @@
+/*
+É um código feito em C que recebe altura de 5 pessoas 
+onde vão ser imprimidas:
+A maior altura, a média das alturas e as pessoas com altura maior que 2 metros.  
+*/
 #include <stdio.h>
 
 int main(void){
@@ -29,9 +34,3 @@ int main(void){
   printf("Número de pessoas com altura maior do que 2 metros: %.2d\n", cont2m);
   return 0;
 }
-
-/*
-É um código feito em C que recebe altura de 5 pessoas 
-onde vão ser imprimidas:
-A maior altura, a média das alturas e as pessoas com altura maior que 2 metros.  
-*/

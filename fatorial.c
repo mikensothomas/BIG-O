@@ -1,3 +1,7 @@
+/*
+Este código é um código feito em c que
+calcula o número fatorial de um número.
+*/
 #include <stdio.h>
 
 int main(void) {
@@ -17,7 +21,3 @@ int main(void) {
   }
   return 0;
 }
-/*
-Este código é um código feito em c que
-calcula o número fatorial de um número.
-*/

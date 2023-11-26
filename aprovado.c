@@ -1,3 +1,9 @@
+/*
+Este código é um código que recebe três notas
+de três alunos, e ele vai dizer se os alunos são aprovados 
+ou não e depois ele vai dizer quantos alunos foram aprovados, reprovados ou 
+está na recuperação nos três alunos.
+*/
 #include <stdio.h>
 
 int main(void) {
@@ -33,10 +39,3 @@ int main(void) {
   printf("\n\nTotal reprovado:%d", tR);
   return 0;
 }
-
-/*
-Este código é um código que recebe três notas
-de três alunos, e ele vai dizer se os alunos são aprovados 
-ou não e depois ele vai dizer quantos alunos foram aprovados, reprovados ou 
-está na recuperação nos três alunos.
-*/
