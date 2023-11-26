@@ -3,7 +3,7 @@
 int main(void) {
   int n1, n2, cont, tA, tR;
   float mediaG, media;
-  cont = 1;
+  cont = 0;
   tA = tR = 0;
 
   while (cont < 3){
@@ -31,6 +31,12 @@ int main(void) {
   }
   printf("\n\nTotal aprovado: %d", tA);
   printf("\n\nTotal reprovado:%d", tR);
-  
   return 0;
 }
+
+/*
+Este código é um código que recebe três notas
+de três alunos, e ele vai dizer se os alunos são aprovados 
+ou não e depois ele vai dizer quantos alunos foram aprovados, reprovados ou 
+está na recuperação nos três alunos.
+*/
