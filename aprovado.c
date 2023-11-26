@@ -5,6 +5,7 @@ ou não e depois ele vai dizer quantos alunos foram aprovados, reprovados ou
 está na recuperação nos três alunos.
 */
 #include <stdio.h>
+#include <time.h>
 
 int main(void) {
   int n1, n2, cont, tA, tR;
@@ -12,7 +13,10 @@ int main(void) {
   cont = 0;
   tA = tR = 0;
 
-  while (cont < 3){
+  time_t inicial, fim;
+  time(&inicial);
+
+  while (cont < 3){ //O(N)
     printf("\n\nDigite a primeira nota: ");
     scanf("%i", &n1);
 
@@ -35,7 +39,14 @@ int main(void) {
     }
     cont = cont + 1;
   }
-  printf("\n\nTotal aprovado: %d", tA);
-  printf("\n\nTotal reprovado:%d", tR);
+
+  time(&fim);
+  time_t tempo = fim - inicial;
+
+  printf("\n\n Total aprovado: %d", tA);
+  printf("\n\n Total reprovado:%d", tR);
+  printf("\n\n O tempo de execução é de: %ld segundos.\n", tempo);
   return 0;
 }
+
+//A complexidade deste algoritmo de linear O(N)

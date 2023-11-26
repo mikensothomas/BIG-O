@@ -4,6 +4,7 @@ onde vão ser imprimidas:
 A maior altura, a média das alturas e as pessoas com altura maior que 2 metros.  
 */
 #include <stdio.h>
+#include <time.h>
 
 int main(void){
   int cont;
@@ -13,7 +14,10 @@ int main(void){
   float maiorAltura = 0;
   float media;
 
-  for(cont = 0; cont <= 4; cont++){
+  time_t inicial, fim;
+  time(&inicial);
+
+  for(cont = 0; cont <= 4; cont++){ // O(N)
     printf("Altura: ");
     scanf("%f", &altura);
       
@@ -32,5 +36,11 @@ int main(void){
   printf("A maior altura encontrada foi: %.2f\n", maiorAltura);
   printf("A media das alturas eh: %.2f\n", media);
   printf("Número de pessoas com altura maior do que 2 metros: %.2d\n", cont2m);
+
+  time(&fim);
+  time_t tempo = fim - inicial;
+
+  printf("O tempo de execução é de : %ld segundos.\n", tempo);
   return 0;
 }
+//A complexidade deste algoritmo é linear O(N)
