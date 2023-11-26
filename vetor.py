@@ -8,3 +8,9 @@ for i in range(7):
     soma_vetor.append(soma_elemento)
 
 print("Vetor resultante da soma:", soma_vetor)
+
+"""
+Este código é um código 
+feito em python, ele faz 
+a soma de dois vetores e imprime o vetor resultante.
+"""
