@@ -43,4 +43,12 @@ int main(void){
   printf("O tempo de execução é de : %ld segundos.\n", tempo);
   return 0;
 }
-//A complexidade deste algoritmo é linear O(N)
+/*
+A complexidade deste algoritmo é linear O(N)
+
+Este algoritmo pertence à classe P (polinomial).
+Porque o tempo de execução do algoritmo é determinístico e 
+é polinomial no tamanho da entrada, que neste caso é o número de iterações do loop (N=5).
+A complexidade do algoritmo é O(N), onde N é o número de iterações no loop, e, 
+portanto, é considerado eficiente em termos de tempo.
+*/

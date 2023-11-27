@@ -23,4 +23,10 @@ print("Vetor resultante da soma:", soma_vetor)
 #print('O tempo de execução é: {:.2f}'.format(tempo_final-tempo_inicial))
 print(tempo_final-tempo_inicial)
 
-#Este algoritmo é de ordem linear O(N)
+"""
+Este algoritmo é de ordem linear O(N)
+
+No caso deste algoritmo, como o 
+algoritmo tem complexidade linear (O(n)), ele estaria na classe P 
+(problemas solucionáveis em tempo polinomial).
+"""

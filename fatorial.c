@@ -28,5 +28,10 @@ time(&inicial);
   printf("O tempo de execução é de: %ld segndos.\n", tempo);
   return 0;
 }
+/*
+A complexidade deste algoritmo é linear O(N)
 
-//A complexidade deste algoritmo é linear O(N)
+Este algoritmo é de classe P, pois o tempo de execução é polinomial 
+em relação ao tamanho da entrada, seguindo a definição da classe P 
+na teoria da complexidade computacional.
+*/
