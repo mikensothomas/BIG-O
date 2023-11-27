@@ -50,33 +50,10 @@ int main(void) {
 }
 
 /*
-A complexidade deste algoritmo de linear O(N)
+A complexidade deste algoritmo é linear O(N)
 
 Este algoritmo pertence à classe P (complexidade polinomial). 
 A classe P engloba todos os problemas de decisão que podem ser 
 solucionados de maneira eficiente, ou seja, em tempo polinomial. 
-
-A complexidade temporal do algoritmo é determinada principalmente pelo 
-número de iterações no loop `while` e pelo tempo constante para realizar
-as operações dentro do loop. No caso deste algoritmo, o loop executa três vezes, 
-independentemente da entrada, portanto, a complexidade de tempo é linear em relação 
-ao tamanho da entrada.
-
-Analise:
-
-1.Entrada do usuário: As operações de entrada (`scanf`) e as operações dentro do loop
-são realizadas em tempo constante. Portanto, a entrada do usuário não afeta significativamente
- a complexidade.
-
-2.Loop while: O loop executa um número constante de vezes (três no caso),
-independentemente dos valores de entrada. Isso contribui para uma complexidade linear O(N),
-onde N é o tamanho da entrada. No entanto, uma vez que o tamanho da entrada é constante,
-podemos considerar isso como O(1) em termos práticos.
-
-3.Operações fora do loop: As operações fora do loop (cálculo de tempo de execução e impressão
- de resultados) também são realizadas em tempo constante.
-
-Portanto, a complexidade do tempo para este algoritmo é eficientemente limitada por um polinômio,
-tornando-o um problema de classe P.
 
 */

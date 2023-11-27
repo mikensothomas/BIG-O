@@ -41,7 +41,7 @@ int main() {
     O(n²) + O(n²) = 2O(n²)
     A complexidade deste algoritmo é Quadradada O(n²)
      
-    O algoritmo apresentado é de classe P, que se refere a problemas 
+    Este algoritmo é de classe P, que se refere a problemas 
     resolúveis em tempo polinomial. O termo "P" vem de "polinomial", 
     indicando que o tempo de execução do algoritmo é uma função 
     polinomial do tamanho da entrada.
