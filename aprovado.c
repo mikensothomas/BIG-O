@@ -2,19 +2,17 @@
 Este código é um código que recebe três notas
 de três alunos, e ele vai dizer se os alunos são aprovados 
 ou não e depois ele vai dizer quantos alunos foram aprovados, reprovados ou 
-está na recuperação nos três alunos.
+estão em recuperação nos três alunos.
 */
 #include <stdio.h>
-#include <time.h>
 
 int main(void) {
-  int n1, n2, cont, tA, tR;
-  float mediaG, media;
-  cont = 0;
+  int n1, n2, tA, tR;
+  float media;
+  int cont = 0;
   tA = tR = 0;
 
-  time_t inicial, fim;
-  time(&inicial);
+
 
   while (cont < 3){ //O(N)
     printf("\n\nDigite a primeira nota: ");
@@ -23,7 +21,7 @@ int main(void) {
     printf("\n\nDigite a segunda nota: ");
     scanf("%i", &n2);
     
-    media = (n1 + n2)/2;
+     media = (n1 + n2)/2;
 
     if ((media >= 0) && (media <= 5)){
       printf("Reprovado: ");
@@ -40,20 +38,35 @@ int main(void) {
     cont = cont + 1;
   }
 
-  time(&fim);
-  time_t tempo = fim - inicial;
+  printf("\n");
+  printf("\n Total aprovado: %d", tA);
+  printf("\n Total reprovado:%d", tR);
 
-  printf("\n\n Total aprovado: %d", tA);
-  printf("\n\n Total reprovado:%d", tR);
-  printf("\n\n O tempo de execução é de: %ld segundos.\n", tempo);
+  printf("\n\n");
   return 0;
 }
 
 /*
-A complexidade deste algoritmo é linear O(N)
+A complexidade deste algoritmo é linear O(n), 
+onde n é o número de iterações do loop (neste caso, 3).
 
-Este algoritmo pertence à classe P (complexidade polinomial). 
-A classe P engloba todos os problemas de decisão que podem ser 
-solucionados de maneira eficiente, ou seja, em tempo polinomial. 
+Este algoritmo é de classe P porque o tempo de execução aumenta linearmente
+com o tamanho da entrada. A entrada neste contexto específico não influencia
+o desempenho de maneira significativa. 
+
+Optimização:
+  O loop “while” poderia ser substituído polo loop “for” como
+  a variável “cont” é usado somente dentro do loop “while” daí 
+  a gente poderia declarar-la diretamente dentro do loop “for”
+
+  A variável “media” poderia ser usada como uma variável local, 
+  daí o programa ficaria com menos linhas de código.
+
+  if ((media > 5) && (media < 7))
+  Neste caso poderia ser apenas if (media == 6)
+  Assim o programa ficaria mais simples.
+  
+  Poderia ter também uma outra verificação para 
+  verificar se a média vai além de 10.
 
 */
