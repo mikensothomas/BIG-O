@@ -15,9 +15,23 @@ for i in range(7): #O(N)
 print("A soma dos vetores é:", soma_vetor)
 
 """
-Este algoritmo é de ordem linear O(N)
+A complexidade é linear, O(N), onde N é o 
+tamanho dos vetores (que é constante neste caso, 7).
 
-No caso deste algoritmo, como o 
-algoritmo tem complexidade linear (O(n)), ele estaria na classe P 
-(problemas solucionáveis em tempo polinomial).
+
+Pode-se otimizar o código utilizando funções nativas do Python, 
+como zip para percorrer simultaneamente os elementos de ambos os vetores.
+
+vetor1 = [10, 24, 3, 43, 55, 6, 7]
+vetor2 = [72, 6, 5, 4, 32, 2, 10]
+soma_vetor = [x + y for x, y in zip(vetor1, vetor2)]
+print("A soma dos vetores é:", soma_vetor)
+
+O algoritmo de soma de vetores é um algoritmo de complexidade linear (O(N)), 
+que é eficiente e escalável para entradas de tamanho razoável. 
+Algoritmos lineares são classificados como P (Polinomial), pois seu 
+tempo de execução é proporcional ao tamanho da entrada.
+
+
+
 """
