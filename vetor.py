@@ -19,8 +19,8 @@ A complexidade é linear, O(N), onde N é o
 tamanho dos vetores (que é constante neste caso, 7).
 
 
-Pode-se otimizar o código utilizando funções nativas do Python, 
-como zip para percorrer simultaneamente os elementos de ambos os vetores.
+Pode-se otimizar o código utilizando a funçõe nativa do Python, 
+como "zip" para percorrer simultaneamente os elementos de ambos os vetores.
 
 vetor1 = [10, 24, 3, 43, 55, 6, 7]
 vetor2 = [72, 6, 5, 4, 32, 2, 10]
