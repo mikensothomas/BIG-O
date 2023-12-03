@@ -4,15 +4,11 @@ Este código é um código feito em C,
 os números da matriz e imprime a matriz.
 */
 #include <stdio.h>
-#include <time.h>
 
 int main() {
     int matriz[4][4];
 
     printf("Digite os elementos da matriz 4x4:\n");
-
-    time_t inicial, fim;
-    time(&inicial);
 
     for (int i = 0; i < 4; i++) { //O(n)
         for (int j = 0; j < 4; j++) { //O(n)
@@ -28,11 +24,6 @@ int main() {
         }
         printf("\n");
     }
-    
-    time(&fim);
-    time_t tempo = fim - inicial;
-
-    printf("O tempo de execução é de: %ld segudos.\n", tempo);
 
     return 0;
 
