@@ -38,6 +38,8 @@ int main() {
     O motivo é que o tempo de execução cresce de maneira polinomial com o tamanho da entrada 
     (neste caso, o tamanho da matriz). 
     
+    Optimização:
+    
     Pode ser útil incluir verificações para garantir que a entrada 
     do usuário seja válida. Por exemplo, você pode querer garantir que 
     o usuário insira valores inteiros e não caracteres.

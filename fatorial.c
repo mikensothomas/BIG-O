@@ -12,18 +12,13 @@ int main(void) {
   printf("Digite o úmero: ");
   scanf("%i", &numero);
 
-
-  if(numero < 0){
-    printf("ERRO: Por favor digite um nṕumero não negativo \n");
-  } else {
     while(numero > 0){ //O(N)
-    fat = fat*numero;
-
-    numero = numero - 1;
-  }
+      fat = fat*numero;
+      numero = numero - 1;
+      //printf("%i \n", fat);
+    }
   printf("O fatorial é: %i\n", fat);
 
-  }
   return 0;
 }
 /*
@@ -41,10 +36,8 @@ if(numero < 0){
    printf("ERRO: Por favor digite um nṕumero não negativo \n");
  } else {
    while(numero > 0){
-   fat = fat*numero;
-
-
-   numero = numero - 1;
+    fat = fat*numero;
+    numero = numero - 1;
  }
  printf("O fatorial é: %i\n", fat);
 

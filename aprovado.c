@@ -1,8 +1,8 @@
 /*
 Este código é um código que recebe três notas
-de três alunos, e ele vai dizer se os alunos são aprovados 
-ou não e depois ele vai dizer quantos alunos foram aprovados, reprovados ou 
-estão em recuperação nos três alunos.
+de três alunos, e ele vai dizer se os alunos são aprovados reprovados ou 
+em recuperação e depois ele vai dizer quantos alunos foram aprovados e
+reprovados nos três alunos.
 */
 #include <stdio.h>
 
@@ -61,10 +61,6 @@ Optimização:
 
   A variável “media” poderia ser usada como uma variável local, 
   daí o programa ficaria com menos linhas de código.
-
-  if ((media > 5) && (media < 7))
-  Neste caso poderia ser apenas if (media == 6)
-  Assim o programa ficaria mais simples.
   
   Poderia ter também uma outra verificação para 
   verificar se a média vai além de 10.
