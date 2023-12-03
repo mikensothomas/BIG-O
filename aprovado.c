@@ -1,5 +1,5 @@
 /*
-Este código é um código que recebe três notas
+Este código é um código que recebe duas notas
 de três alunos, e ele vai dizer se os alunos são aprovados reprovados ou 
 em recuperação e depois ele vai dizer quantos alunos foram aprovados e
 reprovados nos três alunos.
