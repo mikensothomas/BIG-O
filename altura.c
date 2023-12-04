@@ -41,8 +41,7 @@ que neste caso é o número de iterações do loop (N=5).
 Otimizações Propostas:
 A quantidade de entradas é fixa, logo poderia ser definida como uma constante. 
 A entrada de dados poderia ser validada para não ocasionar possíveis erros. 
-A variável 'cont' poderia ser apenas declarada no loop pois ela é usada somente nele, 
-mantendo o escopo. A variável 'media' poderia ser eliminada, podendo ser calculada a 
+A variável 'media' poderia ser eliminada, podendo ser calculada a 
 média das alturas diretamente ao imprimir o resultado para o usuário.
 
 Dado que o algoritmo executa em tempo constante e não há nenhum problema de decisão 
